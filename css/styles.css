@@ -103,8 +103,7 @@ body {
 
 .icon-mail :hover,
 .icon-smartphone :hover {
-  filter: brightness(0) saturate(100%) invert(69%) sepia(66%) saturate(6305%) hue-rotate(185deg)
-    brightness(100%) contrast(91%);
+  filter: invert(44%) sepia(65%) saturate(2166%) hue-rotate(186deg) brightness(101%) contrast(91%);
 }
 
 .icon-smartphone {
@@ -418,8 +417,7 @@ body {
 
 .our-clients-list-item:hover,
 .our-clients-list-item:focus {
-  filter: brightness(0) saturate(100%) invert(69%) sepia(66%) saturate(6305%) hue-rotate(185deg)
-    brightness(100%) contrast(91%);
+  filter: invert(44%) sepia(65%) saturate(2166%) hue-rotate(186deg) brightness(101%) contrast(91%);
 }
 
 .bottom {
@@ -470,7 +468,6 @@ body {
 }
 
 .join-us {
-  display: flex;
   display: block;
   justify-content: center;
   width: 206px;
@@ -482,7 +479,7 @@ body {
   color: var(--pure-white);
   width: 113px;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   font-weight: 700;
 }
@@ -542,6 +539,85 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+.footer-box {
+  display: block;
+  justify-content: center;
+  width: 570x;
+  margin-left: 78px;
+  padding-top: 12px;
+}
+
+.footer-box-title {
+  color: var(--pure-white-color);
+  width: 207px;
+  height: 16px;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  margin: 0;
+}
+.footer-box-form {
+  display: flex;
+}
+
+.newsletter {
+  margin-top: 20px;
+  height: 50px;
+  width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: var(--dark-gray-color);
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.15));
+  padding-left: 16px;
+  color: var(--pure-white-color);
+}
+
+input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.button-newsletter {
+  color: var(--pure-white-color);
+  height: 50px;
+  width: 200px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 20px;
+  background-color: var(--blue-color);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out, cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
+}
+
+.button-newsletter-text {
+  padding: 10px 24px 10px 0;
+}
+
+.button-newsletter:hover {
+  transform: scale(1.1);
+}
+
+.icon-send {
+  color: #fff;
+  height: 24px;
+  width: 24px;
 }
 
 /*portfolio*/
