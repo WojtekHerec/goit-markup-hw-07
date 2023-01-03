@@ -28,13 +28,8 @@ body {
   outline: none;
 }
 
-.page a:visited {
-  color: none;
-}
-
 .container {
   width: 1200px;
-  padding: auto;
   padding: 0px 215px 0px 215px;
 }
 
@@ -133,7 +128,6 @@ body {
 
 .link-phone {
   width: 130px;
-  gap: none;
 }
 
 .link-mail {
@@ -145,7 +139,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   color: rgba(117, 117, 117, 1);
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   height: 16px;
 }
 
@@ -547,7 +541,7 @@ body {
 .footer-box {
   display: block;
   justify-content: center;
-  width: 570x;
+  width: 570px;
   margin-left: 78px;
   padding-top: 12px;
 }
@@ -688,8 +682,7 @@ input::placeholder {
 .box:hover,
 .box:focus {
   box-sizing: border-box;
-  offset: 0px 4px;
-  stroke: var(--main-color solid 1px);
+
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
