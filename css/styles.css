@@ -215,7 +215,7 @@ body {
   width: 528px;
   border-radius: 4px;
   background-color: var(--pure-white-color);
-  display: flex;
+  display: block;
   justify-content: flex-end;
   z-index: 1;
 
@@ -232,12 +232,15 @@ body {
 .btn-modal {
   width: 30px;
   height: 30px;
-  margin: 8px;
+  top: 0;
+  right: 0;
+  margin: 8px 8px 0px 0px;
   padding: 4px 3px 4px 4px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: var(--pure-white-color);
   cursor: pointer;
+  position: absolute;
 }
 
 .icon-antenna,
@@ -577,7 +580,7 @@ body {
 
 input::placeholder {
   font-size: 16px;
-  font-weight: 400;
+
   line-height: 20px;
   letter-spacing: 0.03em;
   text-align: left;
@@ -615,7 +618,7 @@ input::placeholder {
 }
 
 .icon-send {
-  color: #fff;
+  fill: var(--pure-white-color);
   height: 24px;
   width: 24px;
 }
@@ -686,7 +689,7 @@ input::placeholder {
 .box:focus {
   box-sizing: border-box;
   offset: 0px 4px;
-  stroke: var(--black-color solid 1px);
+  stroke: var(--main-color solid 1px);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
@@ -790,4 +793,211 @@ input::placeholder {
   font-weight: 700;
   color: var(--pure-white-color);
   background: rgba(47, 48, 58, 0.8) 80%;
+}
+
+/*okno modalne*/
+
+.modal-form-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--main-color);
+  padding: 2px 0px;
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+
+.modal-form-box {
+  width: 448px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  height: 40px;
+  position: relative;
+  padding-left: 42px;
+  box-sizing: border-box;
+}
+
+.modal-icon-name {
+  fill: var(--main-color);
+  height: 18px;
+  width: 18px;
+}
+
+.modal-icon-phone {
+  fill: var(--main-color);
+  height: 18px;
+  width: 18px;
+}
+
+.modal-icon-mail {
+  fill: var(--main-color);
+  left: 18px;
+  top: 18px;
+}
+
+.modal-form-text {
+  font-size: 12px;
+
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: var(--light-grey-color);
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.modal-icon-name {
+  width: 18px;
+  height: 18px;
+}
+
+.form-element {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.form-element-input {
+  position: relative;
+  width: 448px;
+  margin: 0 auto;
+}
+
+.input-icon {
+  position: absolute;
+  z-index: 2;
+  left: 11px;
+  top: 39px;
+  height: 18px;
+  width: 18px;
+}
+
+textarea {
+  width: 448px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  height: 120px;
+  resize: none;
+  padding-top: 12px;
+  padding-left: 16px;
+}
+
+textarea::placeholder {
+  font-style: normal;
+
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-checkbox {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.modal-checkbox input {
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  height: 15px;
+  width: 16px;
+  background-color: var(--pure-white-color);
+  border: 2px solid black;
+  position: absolute;
+  top: 3px;
+  left: 63px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.modal-checkbox-icon {
+  height: 15px;
+  width: 16px;
+  visibility: hidden;
+}
+
+.modal-checkbox input:checked ~ .checkmark .modal-checkbox-icon {
+  background-color: var(--blue-color);
+  fill: var(--pure-white-color);
+  border: none;
+  border-radius: 2px;
+  visibility: visible;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+}
+
+.modal-checkbox input:checked ~ .checkmark {
+  border: 2px solid var(--white-color);
+}
+
+.modal-checkbox-text {
+  font-style: normal;
+
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--light-grey-color);
+  margin-top: 25px;
+  margin-left: 88px;
+  cursor: default;
+}
+
+.modal-checkbox-link {
+  color: var(--blue-color);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.modal-form-box:focus + .input-icon,
+.modal-form-box:active + .input-icon,
+.modal-form-textarea:focus,
+.modal-form-textarea:active,
+.modal-form-box:active,
+.modal-form-box:focus {
+  fill: var(--blue-color);
+  border-color: var(--blue-color);
+  outline: none;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out, cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: outline-color, fill;
+}
+
+.modal-form-button {
+  width: 200px;
+  height: 50px;
+  margin-bottom: 40px;
+  background: #2196f3;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--pure-white-color);
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out, cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
+}
+
+.modal-form-button:hover {
+  transform: scale(1.1);
+}
+
+.modal-button-position {
+  display: flex;
+  justify-content: center;
 }
