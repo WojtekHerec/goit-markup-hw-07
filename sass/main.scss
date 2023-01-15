@@ -1,3 +1,9 @@
 @use './utils/vars' as *;
-@import './components/navigation';
+@use './components/navigation';
 @import './components/window';
+body {
+  background-color: var(--pure-white-color);
+  font-family: 'Roboto', sans-serif;
+  color: var(--main-color);
+  letter-spacing: 0.03em;
+}
