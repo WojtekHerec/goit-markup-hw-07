@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
     <link rel="stylesheet" href="css/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css.map" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,7 +25,7 @@
   </head>
   <body>
     <div class="page">
-      <div class="container-navigation">
+      <div class="container container-navigation">
         <header class="navigation">
           <a class="navigation__logo" href="index.html"><span>Web</span>Studio</a>
           <nav>
@@ -64,9 +65,14 @@
       <main>
         <section class="banner section">
           <div class="container">
-            <div class="banner-title">
-              <h1 class="title-solutions">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-              <input class="order-button" type="button" data-modal-open value="Zamów Usługe" />
+            <div class="banner__title">
+              <h1 class="banner__title-solutions">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+              <input
+                class="banner__title-order-button"
+                type="button"
+                data-modal-open
+                value="Zamów Usługe"
+              />
 
               <div class="backdrop is-hidden" data-modal>
                 <div class="modal-box">
@@ -134,13 +140,13 @@
         </section>
         <section class="our-strengths">
           <div class="container">
-            <ul class="our-strengths-list">
+            <ul class="our-strengths__list">
               <li>
                 <svg class="icon-antenna">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
-                <h3 class="our-strengths-list-title">Lorem ipsum</h3>
-                <p class="our-strengths-list-paragraf">
+                <h3 class="our-strengths__list-title">Lorem ipsum</h3>
+                <p class="our-strengths__list-paragraf">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                   sodales dui. Interdum et malesuada
                 </p>
@@ -149,8 +155,8 @@
                 <svg class="icon-clock">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
-                <h3 class="our-strengths-list-title">Lorem ipsum</h3>
-                <p class="our-strengths-list-paragraf">
+                <h3 class="our-strengths__list-title">Lorem ipsum</h3>
+                <p class="our-strengths__list-paragraf">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                   sodales dui. Interdum et malesuada
                 </p>
@@ -159,8 +165,8 @@
                 <svg class="icon-diagram">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
-                <h3 class="our-strengths-list-title">Lorem ipsum</h3>
-                <p class="our-strengths-list-paragraf">
+                <h3 class="our-strengths__list-title">Lorem ipsum</h3>
+                <p class="our-strengths__list-paragraf">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                   sodales dui. Interdum et malesuada
                 </p>
@@ -169,8 +175,8 @@
                 <svg class="icon-astronaut">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
-                <h3 class="our-strengths-list-title">Lorem ipsum</h3>
-                <p class="our-strengths-list-paragraf">
+                <h3 class="our-strengths__list-title">Lorem ipsum</h3>
+                <p class="our-strengths__list-paragraf">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                   sodales dui. Interdum et malesuada
                 </p>
@@ -180,16 +186,16 @@
 
           <div class="our-job">
             <div class="container">
-              <h2 class="our-job-title">Czym sie zajmujemy</h2>
-              <ul class="our-job-list">
+              <h2 class="our-job__title">Czym sie zajmujemy</h2>
+              <ul class="our-job__list">
                 <li>
                   <img src="images/coding.jpg" alt="pisanie kodu" width="370" height="294" />
-                  <p class="our-job-list-item">Aplikacje komputerowe</p>
+                  <p class="our-job__list-item">Aplikacje komputerowe</p>
                 </li>
 
                 <li>
                   <img src="images/phone.jpg" alt="Telefon na dłoni" width="370" height="294" />
-                  <p class="our-job-list-item">Aplikacje mobilne</p>
+                  <p class="our-job__list-item">Aplikacje mobilne</p>
                 </li>
                 <li>
                   <img
@@ -198,7 +204,7 @@
                     width="370"
                     height="294"
                   />
-                  <p class="our-job-list-item">Rozwiązania graficzne</p>
+                  <p class="our-job__list-item">Rozwiązania graficzne</p>
                 </li>
               </ul>
             </div>

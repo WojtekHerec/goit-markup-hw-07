@@ -1,6 +1,6 @@
 .container-navigation {
   width: 1600px;
-  border-bottom: 1px solid var($border-color);
+  border-bottom: 1px solid $border-color;
 }
 
 .navigation {
@@ -10,6 +10,15 @@
 
   &__logo {
     margin: 24px 93px 25px 0px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.17;
+    width: 145px;
+  }
+
+  &__logo span {
+    color: $blue-color;
   }
 
   &__list {
@@ -29,14 +38,14 @@
 
   &__list a:focus,
   &__list a:hover {
-    color: var($blue-color);
+    color: $blue-color;
     outline: none;
   }
 
   &__links {
     display: flex;
     list-style: none;
-    color: var($light-grey-color);
+    color: $light-grey-color;
     gap: 30px;
     margin: 32px 12px 32px 305px;
 
@@ -54,12 +63,12 @@
 
 .navigation a {
   text-decoration: none;
-  color: var($main-color);
+  color: $main-color;
 }
 
 .navigation__links a:focus,
 .navigation__links a:hover {
-  color: var($blue-color);
+  color: $blue-color;
 }
 
 .navigation__links-icon-mail :hover,
@@ -84,7 +93,7 @@
   height: 4px;
   display: block;
   width: 100%;
-  background-color: var($blue-color);
+  background-color: $blue-color;
   border-radius: 2px;
   position: absolute;
   top: 44px;
