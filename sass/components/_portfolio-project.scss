@@ -1,4 +1,4 @@
-.products__list {
+.products-list {
   display: flex;
   padding-left: 0px;
   width: 1170px;
@@ -7,28 +7,7 @@
   gap: 0px 30px;
   list-style: none;
 
-  &__list-title {
-    font-weight: 700;
-    line-height: 2;
-    font-size: 18px;
-    margin: 0px;
-  }
-
-  &__list-span {
-    color: $light-grey-color;
-    line-height: 1.87;
-    font-size: 16px;
-  }
-
-  &__list-item {
-    padding: 20px 24px 20px 24px;
-    z-index: 10;
-    border: 1px solid rgba(238, 238, 238, 1);
-    border-top: 0px;
-    opacity: 1;
-  }
-
-  &__list-photo {
+  &__photo {
     width: 370px;
     margin-bottom: 30px;
     border: 1px solid $border-cards;
@@ -36,26 +15,17 @@
     cursor: pointer;
   }
 
-  &__list-photo:hover,
-  &__list-photo:focus {
+  &__photo:hover,
+  &__photo:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
-  &__list-photo:hover,
-  &__list-description,
-  &__list-photo:focus,
-  &__list-description {
-    transform: translateY(-100%);
-    opacity: 0.9;
-    z-index: 3;
-  }
-
-  &__list-card {
+  &__card {
     overflow: hidden;
     position: relative;
   }
 
-  &__list-description {
+  &__description {
     color: $pure-white-color;
     background-color: $blue-color;
     z-index: -1;
@@ -69,10 +39,36 @@
     font-size: 18px;
     line-height: 1.55;
     letter-spacing: 0.03em;
-
     transition-property: transform, visibility, opacity, z-index;
-
     transition-duration: 250ms;
     transition-timing-function: ease-in-out, cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__photo:hover &__description,
+  &__photo:focus &__description {
+    transform: translateY(-100%);
+    opacity: 0.9;
+    z-index: 3;
+  }
+
+  &__title {
+    font-weight: 700;
+    line-height: 2;
+    font-size: 18px;
+    margin: 0px;
+  }
+
+  &__span {
+    color: $light-grey-color;
+    line-height: 1.87;
+    font-size: 16px;
+  }
+
+  &__item {
+    padding: 20px 24px 20px 24px;
+    z-index: 10;
+    border: 1px solid rgba(238, 238, 238, 1);
+    border-top: 0px;
+    opacity: 1;
   }
 }
