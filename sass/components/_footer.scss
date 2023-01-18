@@ -4,7 +4,7 @@
   display: flex;
 }
 
-.address-logo span {
+.address-logo-web {
   color: $blue-color;
 }
 
@@ -24,24 +24,19 @@
   display: flex;
 }
 
-.address-bottom a {
+.address-element {
   color: $pure-white-color;
   text-decoration: none;
-}
-
-.address-logo {
-  margin: 60px 171px 161px 0px;
-}
-
-.address-bottom-span {
-  gap: 20px;
-}
-
-.address-link-phone-mail a {
   color: $gray-color;
   line-height: 1.17;
   list-style: none;
   font-size: 14px;
+}
+
+.address-logo {
+  margin: 60px 171px 161px 0px;
+  color: $pure-white-color;
+  text-decoration: none;
 }
 
 .address-link-phone-mail {
@@ -52,8 +47,8 @@
   padding-left: 0px;
 }
 
-.address-link-phone-mail a:focus,
-.address-link-phone-mail a:hover {
+.address-element :focus,
+.address-element :hover {
   color: $blue-color;
 }
 
@@ -165,9 +160,8 @@
   color: $pure-white-color;
 }
 
-input::placeholder {
+.newsletter::placeholder {
   font-size: 16px;
-
   line-height: 20px;
   letter-spacing: 0.03em;
   text-align: left;

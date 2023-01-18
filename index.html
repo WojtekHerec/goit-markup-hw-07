@@ -27,24 +27,28 @@
     <div class="page">
       <div class="container container-navigation">
         <header class="navigation">
-          <a class="navigation__logo" href="index.html"><span>Web</span>Studio</a>
+          <a class="navigation__logo" href="index.html"
+            ><span class="navigation__logo-web">Web</span>Studio</a
+          >
           <nav>
             <ul class="navigation__list">
               <li class="navigation__list-item">
-                <a class="agency-active" href="index.html">Agencja</a>
+                <a class="agency-active navigation__list-element" href="index.html">Agencja</a>
               </li>
               <li class="navigation__list-item">
-                <a class="portfolio-active" href="portfolio.html">Portfolio</a>
+                <a class="portfolio-active navigation__list-element" href="portfolio.html"
+                  >Portfolio</a
+                >
               </li>
               <li class="navigation__list-item">
-                <a class="contacts-active" href="#">Kontakt</a>
+                <a class="contacts-active navigation__list-element" href="#">Kontakt</a>
               </li>
             </ul>
           </nav>
 
           <ul class="navigation__links">
             <li class="navigation__links-mail">
-              <a href="#">
+              <a class="navigation__links-element" href="#">
                 <svg class="navigation__links-icon-mail">
                   <use href="./images/icons.svg#icon-mail"></use>
                 </svg>
@@ -52,7 +56,7 @@
               </a>
             </li>
             <li class="navigation__links-phone">
-              <a href="#">
+              <a class="navigation__links-element" href="#">
                 <svg class="navigation__links-icon-smartphone">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
@@ -118,7 +122,7 @@
                         <a href="" class="modal-checkbox-link">Politykę Prywatności</a>.</span
                       >
                       <input
-                        id="regulations"
+                        id="regulations "
                         type="checkbox"
                         name="statute"
                         value="Oświadczam iż akceptuję Regulamin i Politykę Prywatności."
@@ -420,13 +424,15 @@
       <footer class="address-bottom">
         <div class="container bottom">
           <div>
-            <a class="address-logo" href="index.html"><span>Web</span>Studio</a>
+            <a class="address-logo" href="index.html"
+              ><span class="address-logo-web">Web</span>Studio</a
+            >
             <address>
               <ul class="address-link-phone-mail">
                 <span>m. Warszawa, Aleje Jerozolimskie 21</span>
 
-                <li><a href="#">info@example.com</a></li>
-                <li><a href="#">+48 111 111 111</a></li>
+                <li><a class="address-element" href="#">info@example.com</a></li>
+                <li><a class="address-element" href="#">+48 111 111 111</a></li>
               </ul>
             </address>
           </div>
